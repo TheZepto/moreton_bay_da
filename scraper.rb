@@ -55,7 +55,7 @@ periodstrs.each {|periodstr|
   period = "&1=" + Date.new(matches[0][0].to_i, matches[0][1].to_i, 1).strftime("%d/%m/%Y")
   period = period + "&2=" + Date.new(matches[0][0].to_i, matches[0][1].to_i, -1).strftime("%d/%m/%Y")
   
-  puts "Getting data in `" + periodstr + "`, changable via MORPH_PERIOD environment"
+  puts "Getting data in `" + periodstr + "`."
 
   url = "http://pdonline.moretonbay.qld.gov.au/Modules/applicationmaster/default.aspx?page=found" + period + "&4a=&6=F"
   comment_url = "mailto:council@logan.qld.gov.au"
