@@ -27,6 +27,7 @@ def scrape_page(page)
         puts "Skipping already saved record " + record['council_reference']
       end
     rescue
+      puts "Page is empty."
       next
     end
   end
